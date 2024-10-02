@@ -1,0 +1,8 @@
+graph TD
+    A[Input Image] --> B[Backbone: CSPDarknet53]
+    B --> C[Neck: PANet]
+    C --> D[Head: YOLOv5 Head]
+    D --> E[Output: Bounding Boxes & Class Probabilities]
+    
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style E fill:#bbf,stroke:#333,stroke-width:2px
